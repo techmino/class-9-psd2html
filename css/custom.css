@@ -1,0 +1,535 @@
+/* =====================
+    Custom font configuration
+======================== */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+
+@font-face {
+    font-family: gismo;
+    src: url(../fonts/gismo.ttf);
+    src: url(../fonts/gismo.eot);
+}
+
+@font-face {
+    font-family: impact;
+    src: url(../fonts/impact.ttf);
+    src: url(../fonts/impact.eot);
+}
+
+@font-face {
+    font-family: caviar;
+    src: url(../fonts/caviar.ttf);
+}
+
+/* ===========================
+    common css
+===============================
+ */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ===========================
+    header part
+===============================
+ */
+
+
+header {
+    background: url(../images/banner-image.png);
+    background-size: cover;
+    min-height: 100vh;
+
+
+}
+
+.carousel-item {
+    min-height: 100vh;
+}
+
+.carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.carousel-control-next {
+    left: 0px;
+    top: 0;
+
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    transform: translateY(650%);
+
+}
+
+.carousel-control-prev {
+
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    transform: translateY(550%);
+
+
+
+}
+
+
+.carousel-control-next span,
+.carousel-control-prev span {
+    padding: 5px 40px;
+}
+
+
+.carousel-control-next span:hover,
+.carousel-control-prev span:hover {
+    background: rgba(0, 0, 0, 0.315);
+
+
+}
+
+
+.carousel-item h1 {
+    font-size: 66px;
+    color: #66baba;
+    font-weight: 600;
+}
+
+.carousel-item h1 span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.carousel-item p {
+    max-width: 400px;
+    margin: auto;
+    color: #f9f4dd;
+    font-weight: 400;
+
+}
+
+.btn-custom {
+    background: #66baba;
+
+    color: #fff;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-bottom-left-radius: 30px;
+    margin-right: 20px;
+    transition: all 0.6s ease;
+}
+
+.btn-custom:hover {
+    background: transparent;
+    color: #fff;
+
+}
+
+.btn-custom-reverse {
+
+    color: #fff;
+    padding: 15px 30px;
+    border: 2px solid #66baba;
+    border-bottom-right-radius: 30px;
+    margin-left: 20px;
+    transition: all 0.6s ease;
+}
+
+.btn-custom-reverse:hover {
+    background: #66baba;
+}
+
+.carousel-caption p {
+    margin-bottom: 50px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 37px 18px;
+
+    position: relative;
+
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: all 0.6s ease;
+
+}
+
+.navbar-nav .nav-item .nav-link::before {
+    content: "";
+    width: 100%;
+    height: 0px;
+    bottom: 0;
+    left: 0;
+
+    position: absolute;
+    transition: all 0.6s ease;
+
+}
+
+.navbar-nav .nav-item .nav-link:hover::before {
+    height: 8px;
+    background-color: #66BABA;
+
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    height: 100%;
+    background-color: rgba(64, 175, 204, 0.25);
+}
+
+
+.navbar {
+
+    padding: 0;
+    ;
+
+}
+
+/* Social list */
+ul.social-list {
+    position: fixed;
+    right: 50px;
+
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+
+}
+
+ul.social-list li {
+    position: relative;
+
+}
+
+ul.social-list li a {
+    color: #929292;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+ul.social-list li a:hover {
+    background: #66BABA;
+    color: #fff;
+
+}
+
+ul.social-list li span {
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 100px;
+    right: -32px;
+    top: 45px;
+    font-size: 17px;
+
+
+}
+
+/* ===========================
+    About me section
+===============================
+ */
+
+section {
+    padding-top: 150px;
+}
+
+section .heading {
+    color: #4EACCA;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    position: relative;
+}
+
+section .heading span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 138px;
+    font-weight: 500;
+    color: #f7f7f7;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+
+}
+
+p {
+    color: #b5b5b5;
+    font-size: 16px;
+}
+
+.skills-heading {
+    color: #45ACC7;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0 25px;
+}
+
+.skill {
+    position: relative;
+}
+
+.skill img {
+    border-radius: 10px;
+}
+
+.skill p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    bottom: 0;
+    z-index: 1;
+
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.skill:hover p {
+    bottom: 50%;
+    transform: translateY(50%);
+    opacity: 1;
+}
+
+.skill::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+    background-color: hsla(80, 3%, 19%, 0.95);
+    position: absolute;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.skill:hover::after {
+    height: 100%;
+}
+
+.backend .skill::after {
+    background-color: rgba(240, 218, 79, 0.95);
+    border-radius: 10px;
+}
+
+.backend .skill p {
+    color: #000;
+}
+
+.graphic .skill::after {
+    background-color: hsla(276, 88%, 19%, 0.95);
+    border-radius: 10px;
+}
+
+/* Resume */
+
+.resume-box {
+    position: relative;
+    padding-left: 35px;
+    padding-bottom: 40px;
+    transition: all 1s;
+}
+
+.resume-section h4 {
+    color: #aaaaaa;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+
+
+.resume-box::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: #40afcc;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    border: 2px solid #40b0cc00;
+    z-index: 1;
+    transition: all 0.3s;
+
+}
+
+.resume-box:hover::before {
+    background: #fff;
+    border: 2px solid #40b0cc;
+    box-shadow: 0 0 5px 3px #40b0cc;
+
+}
+
+.resume-box::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    background: #40afcc;
+    left: 10px;
+    top: 0;
+
+}
+
+.resume-box .resume {
+    transition: all 0.3s;
+    padding-bottom: 20px;
+}
+
+.resume-box span {
+    font-size: 20px;
+    border: 1px solid;
+    border-bottom-right-radius: 25px;
+    padding: 5px 12px;
+    display: inline-block;
+    transition: all 0.3s;
+
+}
+
+.resume-box:hover span {
+    color: #40afcc;
+}
+
+
+.resume-box h1 {
+    text-transform: uppercase;
+    color: #242424;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.resume-box:hover h1 {
+    color: #40afcc;
+}
+
+
+.resume-box h5 {
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #242424;
+
+}
+
+.resume-box p {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #242424;
+    max-width: 480px;
+
+
+}
+
+.resume-box:hover .resume {
+    background-image: url(../images/elipse.png);
+    padding-left: 30px;
+    padding-right: 30px;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.work-list {}
+
+.work-list li {}
+
+.work-list .btn {
+    color: #505050;
+    font-size: 18px;
+    border: 3px solid #40afcc00;
+    border-bottom-right-radius: 25px;
+
+}
+
+.work-list .btn:hover {
+    border: 3px solid #40afcc;
+}
+
+
+.question-section .container {
+    background: url(../images/question.png);
+    padding: 20px 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 60px;
+    align-items: center;
+}
+
+.question-section .row {
+    align-items: center;
+}
+
+.question-section h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.question-section span {
+    display: block;
+    font-weight: 300;
+
+
+
+}
+
+.question-section .modal-btn {
+    color: #40afcc;
+    background-color: #fff;
+    padding: 8px 25px;
+    border-bottom-right-radius: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 0 10px #72737373;
+    float: right;
+    align-items: center;
+
+
+
+}
+
+
+.footer-section {
+    background-color: #40afcc;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 80px;
+
+
+}
